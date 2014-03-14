@@ -9,8 +9,12 @@
   "licenses":[{
     "type": "MIT"
   }],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/bolster/jquery.tooltip.git"
+  },
   "homepage": "http://github.com/bolster/jquery-tooltip",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-cli": "~0.1.7",
