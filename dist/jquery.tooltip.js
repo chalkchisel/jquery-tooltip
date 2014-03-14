@@ -1,11 +1,12 @@
-/*
+/* 
  *  jQuery tooltip - v0.1.0
- *  A tooltip library that doesn't make ALL THE ASSUMPTIONS
+ *  A tooltip library that doesn't make ALL THE ASSUMPTIONS.
  *  http://github.com/bolster/jquery-tooltip
  *
  *  Made by Nick Hudkins
  *  Under MIT License
  */
+
 (function() {
   var __bind = function(fn, me){ return function(){ return fn.apply(me, arguments); }; };
 

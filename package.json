@@ -2,9 +2,15 @@
   "name": "jquery-tooltip",
   "title": "jQuery tooltip",
   "description": "A tooltip library that doesn't make ALL THE ASSUMPTIONS.",
-  "author": "Nick Hudkins",
+  "author": {
+    "name": "Nick Hudkins",
+    "email": "nick@nickhudkins.com"
+  },
+  "licenses":[{
+    "type": "MIT"
+  }],
   "homepage": "http://github.com/bolster/jquery-tooltip",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-cli": "~0.1.7",
@@ -13,7 +19,9 @@
     "grunt-contrib-uglify": "~0.2.0",
     "grunt-contrib-coffee": "~0.7.0",
     "grunt-contrib-watch": "~0.6.0",
-    "grunt-contrib-stylus": "~0.13.2"
+    "grunt-contrib-stylus": "~0.13.2",
+    "grunt-bump": "0.0.13",
+    "grunt-release": "~0.7.0"
   },
   "scripts": {
     "test": "grunt travis --verbose"
