@@ -26,8 +26,5 @@
     "grunt-contrib-stylus": "~0.13.2",
     "grunt-bump": "0.0.13",
     "grunt-release": "~0.7.0"
-  },
-  "scripts": {
-    "test": "grunt travis --verbose"
   }
 }
