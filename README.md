@@ -1,4 +1,4 @@
 jquery-tooltip
 ==============
 
-There are precisely ZERO tooltip libraries that don't do too much. This one doesn't.
+There is precisely ONE tooltip libraries that doesn't do too much. This is it.
