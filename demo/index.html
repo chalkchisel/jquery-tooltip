@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>jQuery tooltip</title>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+		<script src="../dist/jquery.tooltip.js"></script>
+		<link rel="stylesheet" href="../dist/style.css">
+	</head>
+	<body>
+		<script>
+			$(function() {
+				$(".tooltipped").tooltip();
+			});
+		</script>
+		<h1>Hei</h1>
+		<div class="awesome">
+			<a class="tooltipped" href="http://www.example.com/help/" title="Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.">First Link</a>
+			<a class="tooltipped" href="http://www.example.com/help/" title="Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor.">Second Link</a>
+		</div>
+	</body>
+</html>

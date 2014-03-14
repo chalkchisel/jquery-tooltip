@@ -1,0 +1,39 @@
+@import 'nib'
+global-reset()
+
+.tooltipped{
+    margin-right 20px
+}
+
+.bolster-tooltip{
+    background white
+    border 1px solid #e1e1e1
+    padding 10px
+    margin 0px 0px 12px 0px
+    max-width 250px
+    box-sizing border-box
+    font-size 12px
+    line-height 16px
+    &:before, &:after{
+        content: ""
+        display block
+        size 0px
+        border 10px solid transparent
+        border-top 10px solid #e1e1e1
+        position absolute
+        bottom -20px
+        left 50%
+        margin-left -5px
+    }
+    &:after{
+        border-top 10px solid white
+        bottom -19px
+    }
+}
+.bolster-tooltip__link{
+    display block
+}
+
+.awesome{
+    padding 200px
+}
