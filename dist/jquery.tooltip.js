@@ -12,7 +12,7 @@
 
   (function($, window, document) {
     var Plugin, defaults, pluginName;
-    pluginName = "tooltip";
+    pluginName = "toolpop";
     defaults = {
       linkText: "Learn More",
       className: 'bolster-tooltip'

@@ -8,7 +8,7 @@ do ($ = jQuery, window, document) ->
   # minified (especially when both are regularly referenced in your plugin).
 
   # Create the defaults once
-  pluginName = "tooltip"
+  pluginName = "toolpop"
   defaults = {
     linkText: "Learn More"
     className: 'bolster-tooltip'
