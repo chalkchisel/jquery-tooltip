@@ -1,5 +1,5 @@
 /*
- *  jQuery tooltip - v0.1.0
+ *  jQuery tooltip - v0.1.1
  *  A tooltip library that doesn't make ALL THE ASSUMPTIONS.
  *  http://github.com/bolster/jquery-tooltip
  *
@@ -19,7 +19,7 @@
     };
     Plugin = (function() {
       function Plugin(element, options) {
-        var tmpl, tooltipContent, tooltipLink;
+        var target, tmpl, tooltipContent, tooltipLink;
         this.element = element;
         this.mouseleave = __bind(this.mouseleave, this);
         this.mouseenter = __bind(this.mouseenter, this);
@@ -32,7 +32,8 @@
         this.$el = $(this.element);
         tooltipContent = this.$el.attr("title");
         tooltipLink = this.$el.attr("href");
-        tmpl = "<div class=\"" + this.options.className + "\">" + tooltipContent + "<a href=\"" + tooltipLink + "\" class=\"" + this.options.className + "__link\">" + this.options.linkText + "</a></div>";
+        target = this.$el.attr("target");
+        tmpl = "<div class=\"" + this.options.className + "\">" + tooltipContent + "<a href=\"" + tooltipLink + "\" target=\"" + target + "\" class=\"" + this.options.className + "__link\">" + this.options.linkText + "</a></div>";
         this.$tooltip = $(tmpl);
         tooltipContent = null;
         tooltipLink = null;
