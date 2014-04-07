@@ -27,7 +27,7 @@ do ($ = jQuery, window, document) ->
       @$el = $(@element)
 
       tooltipContent = @$el.attr "title"
-      tooltipLink = @$el.attr "href"
+      tooltipLink = @$el.data('learnMore') || @$el.attr "href"
       target = @$el.attr "target"
 
       tmpl = """<div class="#{@options.className}">#{tooltipContent}<a href="#{tooltipLink}" target="#{target}" class="#{@options.className}__link">#{@options.linkText}</a></div>"""
