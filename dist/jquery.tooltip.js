@@ -31,7 +31,7 @@
         this._name = pluginName;
         this.$el = $(this.element);
         tooltipContent = this.$el.attr("title");
-        tooltipLink = this.$el.attr("href");
+        tooltipLink = this.$el.data('learnMore') || this.$el.attr("href");
         target = this.$el.attr("target");
         tmpl = "<div class=\"" + this.options.className + "\">" + tooltipContent + "<a href=\"" + tooltipLink + "\" target=\"" + target + "\" class=\"" + this.options.className + "__link\">" + this.options.linkText + "</a></div>";
         this.$tooltip = $(tmpl);
