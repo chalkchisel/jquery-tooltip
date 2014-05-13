@@ -1,5 +1,5 @@
 /*
- *  jQuery tooltip - v0.1.3
+ *  jQuery tooltip - v0.1.4
  *  A tooltip library that doesn't make ALL THE ASSUMPTIONS.
  *  http://github.com/bolster/jquery-tooltip
  *
