@@ -14,7 +14,7 @@
     "url": "git://github.com/bolster/jquery.tooltip.git"
   },
   "homepage": "http://github.com/bolster/jquery-tooltip",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "devDependencies": {
     "grunt": "~0.4.1",
     "grunt-cli": "~0.1.7",

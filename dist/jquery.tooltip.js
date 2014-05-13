@@ -109,7 +109,15 @@
         this.$tooltip.off("mouseenter");
         this.$tooltip.off("mouseleave");
         this.$tooltip.on("mouseenter", this.tooltipEnter);
-        return this.$tooltip.on("mouseleave", this.mouseleave);
+        this.$tooltip.on("mouseleave", this.mouseleave);
+        this.$tooltip.find("." + this.options.className + "__link").off("click");
+        return this.$tooltip.find("." + this.options.className + "__link").on("click", function(e) {
+          var link;
+          link = $(e.currentTarget).attr('href');
+          return $(document).trigger('toolpop:linkClick', {
+            url: link
+          });
+        });
       };
 
       Plugin.prototype.mouseleave = function() {

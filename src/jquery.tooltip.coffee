@@ -109,6 +109,11 @@ do ($ = jQuery, window, document) ->
       @$tooltip.off "mouseleave"
       @$tooltip.on "mouseenter", @tooltipEnter
       @$tooltip.on "mouseleave", @mouseleave
+      @$tooltip.find(".#{@options.className}__link").off "click"
+      @$tooltip.find(".#{@options.className}__link").on "click", (e)->
+        link = $(e.currentTarget).attr('href')
+        $(document).trigger 'toolpop:linkClick',
+          url: link
 
     mouseleave: ()=>
       @options.timer = setTimeout ()=>

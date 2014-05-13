@@ -1,7 +1,7 @@
 {
   "name": "jquery-tooltip",
   "description": "A tooltip library that doesn't make ALL THE ASSUMPTIONS.",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "main": "dist/jquery.tooltip.js",
   "author": {
     "name": "Nick Hudkins",
